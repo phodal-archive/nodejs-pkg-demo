@@ -1,5 +1,5 @@
 {
-  "name": "mountbank-standalone",
+  "name": "mountbank-electron",
   "version": "0.0.1",
   "description": "Standlone mountbank",
   "main": "main.js",
