@@ -1,0 +1,24 @@
+{
+  "name": "mountbank-pkg",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "index.js",
+  "scripts": {
+    "package": "pkg package.json --options expose-gc --debug --compress GZip  >output.log"
+  },
+  "dependencies": {
+    "mountebank": "^2.4.0"
+  },
+  "pkg": {
+    "assets": [
+      "./node_modules/mountebank/src/views/**/*",
+      "./node_modules/mountebank/src/public/**/*"
+    ],
+    "outputPath": "dist",
+    "targets": []
+  },
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "pkg": "^5.3.1"
+  }
+}
